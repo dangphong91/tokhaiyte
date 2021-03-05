@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mystyle.css">   
+</head>
+<body>
+    <h1 style="text-align: center;">Tờ khai y tế/Vietnam Health Declaration</h1>
+    <h4>Chọn ngôn ngữ để khai báo y tế /Select the language to declare health:</h4>
+    <h3 style="text-align: center;">TỜ KHAI Y TẾ ĐỐI VỚI NGƯỜI NHẬP CẢNH</h3>
+    <h4 style="text-align: center;">ĐÂY LÀ TÀI LIỆU QUAN TRỌNG, THÔNG TIN CỦA ANH/CHỊ SẼ GIÚP CƠ QUAN Y TẾ LIÊN LẠC KHI CẦN THIẾT ĐỂ PHÒNG CHỐNG DỊCH BỆNH TRUYỀN NHIỄM</h4>
+    <h4 style="text-align: center; color: red;">Khuyến cáo: Khai báo thông tin sai là vi phạm pháp luật Việt Nam và có thể xử lý hình sự</h4>
+    <form action="tokhai.html">
+        <table>
+            <tr>
+                <td style="width:200px">Cửa khẩu (*)</td>
+                <td><select id="a" style="width:200px">
+                    <option>-Chọn-</option>
+                    <option>A Pa Chải</option>
+                    <option>A Đớt</option>
+                    <option>Bu Prăng</option>
+                    <option>Buôn Đôn</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+            <td>Họ tên (ghi chữ IN HOA) (*)</td>
+            <td><input id="b" style="width:192px"></td>
+            </tr>
+        </table>
+        <p>Năm sinh (*) <select style="width:150px">
+            <option>1990</option>
+            <option>1991</option>
+            <option>1992</option>
+            <option>1993</option>
+            <option>1994</option>
+            <option>1995</option>
+            <option>1996</option>
+            <option>1997</option>
+            <option>1998</option>
+            <option>1999</option>
+            <option>2000</option>
+        </select>  
+        Giới tính (*) <select style="width:150px">
+            <option>-Chọn-</option>
+            <option>Nam</option>
+            <option>Nữ</option>
+            <option>Khác</option>
+        </select>  
+        Quốc tịch (*) <select style="width:150px">
+            <option>Việt Nam</option>
+            <option>Trung Quốc</option>
+            <option>Lào</option>
+            <option>Cam</option>
+            <option>Thái Lan</option>
+        </select> </p>
+        <p>Số hộ chiếu hoặc số CMND hoặc giấy thông hành hợp pháp khác (*)<input style="width:260px"> </p>
+        <p>Thông tin đi lại (*) Tàu bay <input type="checkbox"> Tàu thuyền <input type="checkbox">
+        Ô tô <input type="checkbox"> Khác (Ghi rõ): </p>
+        <textarea cols="100" rows="3"></textarea>
+        <table>
+            <tr>
+                <td>Số hiệu phương tiện </td>
+                <td><input class="inp"></td>
+                <td>Số ghế </td>
+                <td><input class="inp"></td>
+            </tr>
+            <tr>
+                <td>Ngày khởi hành (*)</td>
+                <td><input type="date" class="inp"></td>
+                <td>Ngày nhập cảnh (*)</td>
+                <td><input type="date" class="inp"></td>
+            </tr>
+            <tr>
+                <th colspan="4" style="background-color: white;">Địa điểm khởi hành (tỉnh/quốc gia)</th>
+            </tr>
+            <tr>
+                <td>Quốc gia/ Vùng lãnh thổ (*)</td>
+                <td><select class="inp">
+                    <option>-Chọn-</option>
+                    <option>Việt Nam</option>
+                    <option>Trung Quốc</option>
+                    <option>Lào</option>
+                    <option>Cam</option>
+                    <option>Thái Lan</option>
+                </select></td>
+                <td>Tỉnh (*)</td>
+                <td> <input class="inp"></td>
+            </tr>
+            <tr>
+                <td colspan="4">Địa điểm nơi đến (tỉnh/quốc gia)</td>
+            </tr>
+            <tr>
+                <td>Quốc gia/ Vùng lãnh thổ (*)</td>
+                <td><select class="inp">
+                    <option>Việt Nam</option>
+                    <option>Trung Quốc</option>
+                    <option>Lào</option>
+                    <option>Cam</option>
+                    <option>Thái Lan</option>
+                </select></td>
+                <td>Tỉnh (*)</td>
+                <td><select class="inp">
+                    <option>-Chọn-</option>
+                    <option>Thanh Hóa</option>
+                    <option>Nghệ An</option>
+                    <option>Hà Tĩnh</option>
+                    <option>Quảng Bình</option>
+                    <option>Quảng Trị</option>
+                    <option>Thừa Thiên. Huế</option>
+                </select></td>
+            </tr>
+        </table>
+        <p>Trong vòng 14 ngày qua, Anh/Chị có đến quốc gia/vùng lãnh thổ nào? (*) </p>
+        <textarea cols="100" rows="3"></textarea>
+        <table>
+            <tr>
+                <th colspan="6" style="background-color: white;">Nơi lưu trú sau cách ly tập trung</th>
+            </tr>
+            <tr>
+                <td>Tỉnh thành (*) </td>
+                <td><select class="option">
+                    <option>Thành phố Đà Nẵng</option>
+                    <option>Thanh Hóa</option>
+                    <option>Nghệ An</option>
+                    <option>Hà Tĩnh</option>
+                    <option>Quảng Bình</option>
+                    <option>Quảng Trị</option>
+                    <option>Thừa Thiên. Huế</option>
+                </select></td>
+                <td>Quận / huyện (*) </td>
+                <td><select class="option">
+                    <option>-Chọn-</option>
+                </select></td>
+                <td>Phường / xã (*) 
+                <td><select class="option">
+                    <option>-Chọn-</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td colspan="6">Địa chỉ lưu trú sau cách ly (*) </td>
+            </tr>
+            <tr>
+                <td colspan="6"><input style="width: 100%"></td>
+            </tr>
+            <tr>
+                <th colspan="6" style="background-color: white;">Địa chỉ liên lạc tại Việt Nam</th>
+            </tr>
+            <tr>
+                <td>Tỉnh thành (*) </td>
+                <td><select class="option">
+                    <option>-Chọn-</option>
+                    <option>Thanh Hóa</option>
+                    <option>Nghệ An</option>
+                    <option>Hà Tĩnh</option>
+                    <option>Quảng Bình</option>
+                    <option>Quảng Trị</option>
+                    <option>Thừa Thiên. Huế</option>
+                </select></td>
+                <td>Quận / huyện (*) </td>
+                <td><select class="option">
+                    <option>-Chọn-</option>
+                </select></td>
+                <td>Phường / xã (*) </td>
+                <td><select class="option">
+                    <option>-Chọn-</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td colspan="6">Địa chỉ nơi ở tại Việt Nam (*) </td>
+            </tr>
+            <tr>
+                <td colspan="6"><input style="width: 100%"></td>
+            </tr>
+        </table>
+        <p style="font-size: 12px;">Số điện thoại bạn sẽ sử dụng tại Việt Nam (Là số Roaming hoặc số Việt Nam)</p>
+        <p>Điện thoại (*) <input> Email <input></p>
+        <h4>Trong vòng 14 ngày (tính đến thời điểm làm thủ tục xuất cảnh, nhập cảnh, quá cảnh) Anh/Chị có thấy xuất hiện dấu hiệu nào sau đây không? (*)</h4>
+        <table border="1">
+            <tr>
+                <th class="tieude">Triệu chứng</th>
+                <th class="bolean">Có</th>
+                <th class="bolean">Không</th>
+                <th class="tieude">Triệu chứng</th>
+                <th class="bolean">Có</th>
+                <th class="bolean">Không</th>
+            </tr>
+            <tr>
+                <td>Sốt (*)</td>
+                <td><input type="radio" name="sot"></td>
+                <td><input type="radio" name="sot"></td>
+                <td>Nôn/buồn nôn (*)</td>
+                <td><input type="radio" name="non"></td>
+                <td><input type="radio" name="non"></td>
+            </tr>
+            <tr>
+                <td>Ho (*)</td>
+                <td><input type="radio" name="ho"></td>
+                <td><input type="radio" name="ho"></td>
+                <td>Tiêu chảy (*)</td>
+                <td><input type="radio" name="tc"></td>
+                <td><input type="radio" name="tc"></td>
+            </tr>
+            <tr>
+                <td>Khó thở (*)</td>
+                <td><input type="radio" name="kt"></td>
+                <td><input type="radio" name="kt"></td>
+                <td>Xuất huyết ngoài da (*)</td>
+                <td><input type="radio" name="xh"></td>
+                <td><input type="radio" name="xh"></td>
+            </tr>
+            <tr>
+                <td>Đau họng (*)</td>
+                <td><input type="radio" name="dh"></td>
+                <td><input type="radio" name="dh"></td>
+                <td>Nổi ban ngoài da (*)</td>
+                <td><input type="radio" name="nb"></td>
+                <td><input type="radio" name="nb"></td>
+            </tr>
+        </table>
+        <p>Danh sách vắc-xin hoặc sinh phẩm được sử dụng</p>
+        <input style="width: 100%">
+        <h4>Lịch sử phơi nhiễm: Trong vòng 14 ngày qua, Anh/Chị có (*)</h4>
+        <table border="1">
+            <tr>
+                <th></th>
+                <th class="bolean">Có</th>
+                <th class="bolean">Không</th>
+            </tr>
+            <tr>
+                <td>Đến trang trại chăn nuôi / chợ buôn bán động vật sống / cơ sở giết mổ động vật / tiếp xúc động vật (*)</td>
+                <td><input type="radio" name="txdv"></td>
+                <td><input type="radio" name="txdv"></td>
+            </tr>
+            <tr>
+                <td>Tiếp xúc gần (<2m) với người mắc bệnh viêm đường hô hấp do nCoV (*)</td>
+                <td><input type="radio" name="txn"></td>
+                <td><input type="radio" name="txn"></td>
+            </tr>
+        </table>
+        <h4>Chọn cơ sở cách ly (*)</h4>
+        <p><input type="radio" name="cs">Cơ sở cách ly tập trung</p>
+        <p><input type="radio" name="cs">Cơ sở cách ly tự chọn</p>
+        <p><input type="radio" name="cs">Khác</p>
+        <h4>Phiếu kết quả xét nghiệm</h4>
+        <input type="date">
+        <p><input type="checkbox">Xác nhận âm tính</p>
+        <p style="color: red; text-align: center;">Dữ liệu bạn cung cấp hoàn toàn bảo mật và chỉ phục vụ cho việc phòng chống dịch, thuộc quản lý của Ban chỉ đạo quốc gia về Phòng chống dịch Covid-19.</p>
+        <p style="color: red; text-align: center;"> Khi bạn nhấn nút "Gửi" là bạn đã hiểu và đồng ý.</p>
+        <div class="boxes">
+            <button type="submit">Gửi tờ khai</button>
+        </div>
+    </form>
+</body>
+</html>
